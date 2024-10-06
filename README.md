@@ -10,7 +10,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/leetcode-solutions.git
+git clone https://github.com/wasifali2004/leetcode-solutions.git
 Navigate to the problem folder: Each problem is located in its respective category folder (e.g., arrays, linked-lists, dynamic-programming).
 
 Compile and run the code: Use a C++ compiler to compile the solution and run it. For example:
@@ -29,4 +29,4 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact
-For any questions or suggestions, please reach out to me at your-email@example.com.
+For any questions or suggestions, please reach out to me at wasifali16103@gmail.com.
