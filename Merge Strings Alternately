@@ -1,0 +1,41 @@
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        int n = word1.length();
+        int q = word2.length();
+        string result;
+        int low = 0;
+        int high = 0;
+        int count = 0;
+        while(n > low && q > high) {
+            if(count%2 == 0) {
+                result += word1[low];
+                low++;
+            }
+            else if(count%2 != 0){
+                result += word2[high];
+                high++;
+            }
+            if(n == 0) {
+                result += word2[high];
+                high++;
+            }
+            else if(q == 0) {
+                result += word1[low];
+                low++;
+            }
+            count++;
+        }
+        while(high < q) {
+            result += word2[high];
+            high++;
+        }
+        while(low < n) {
+            result += word1[low];
+            low++;
+        }
+        
+
+        return result;
+    }
+};
