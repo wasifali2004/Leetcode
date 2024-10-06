@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.size() == 0) {
+            return 0;
+        }
+        int count = 1;
+        int low = 0;
+        int high = 1;
+        while(high < nums.size()) {
+            if(nums[low] == nums[high]) {
+                count++;
+                if(count == 3) {
+                    count --;
+                    nums.erase(nums.begin()+high);
+                }
+                else {
+                    high++;
+                }
+            }
+            else {
+            count = 1;
+            low = high;
+            high++;
+            }
+        }
+        return nums.size();   
+    }
+};
