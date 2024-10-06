@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int maxArea(vector<int>& v) {
+        int ans = INT_MIN;
+        int low = 0;
+        int high = v.size()-1;
+        while(low <= high) {
+            int width = high - low;
+            int height = min(v[low], v[high]);
+            int check = width*height;
+            ans = max(ans, check);
+            if(v[low] > v[high]) {
+                high--;
+            }
+            else {
+                low++;
+            }
+        }
+        return ans;
+    }
+};
