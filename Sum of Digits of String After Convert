@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int getLucky(string s, int k) {
+        int sum = 0;
+        int check = 0;
+        for(char c:s) {
+            check = (c-'a')+1;
+            while(check) {
+                sum += check % 10;
+                check /= 10;
+            }
+        }
+        k--;
+        while(k) {
+            int temp = sum;
+            sum = 0;
+            while(temp) {
+                sum += temp%10;
+                temp /= 10;
+            }
+            k--;
+        }
+             
+        return sum;
+    }
+   
+};
