@@ -25,8 +25,6 @@ All solutions are located in the solutions folder, organized by problem category
 Contributing
 If you have suggestions or find a bug, feel free to open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact
-For any questions or suggestions, please reach out to me at wasifali16103@gmail.com.
+For any questions or suggestions, message me.
