@@ -1,4 +1,4 @@
-                                                            LeetCode Solutions
+                                                        LeetCode Solutions
 
 Welcome to my LeetCode Solutions repository! Here, you'll find my solutions to various coding problems from LeetCode, implemented in C++.
 
