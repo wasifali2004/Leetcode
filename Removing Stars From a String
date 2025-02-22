@@ -12,6 +12,7 @@ public:
             }
         }
         stack<char> temp;
+
         while(!st.empty()) {
             temp.push(st.top());
             st.pop();
@@ -21,6 +22,7 @@ public:
             temp.pop();
             ans += c;
         }
+
         return ans;
     }
 };
