@@ -7,6 +7,7 @@ public:
         }
         int low = 0;
         int high = 1;
+
         while(n-1 > 0) {
             if(nums[low] == 0 && nums[high] != 0 ) {
                 swap(nums[low], nums[high]);
@@ -22,5 +23,6 @@ public:
             }
             n--;
         }
+
     }
 };
