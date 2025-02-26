@@ -4,6 +4,7 @@ public:
         int n = nums.size();
         vector<int> v(n,1);
         int left = 1;
+
         for(int i=0; i<n; ++i) {
             v[i] *= left;
             left *= nums[i];
