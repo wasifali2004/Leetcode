@@ -4,6 +4,7 @@ public:
         int ans = INT_MIN;
         int low = 0;
         int high = v.size()-1;
+
         while(low <= high) {
             int width = high - low;
             int height = min(v[low], v[high]);
@@ -16,6 +17,7 @@ public:
                 low++;
             }
         }
+
         return ans;
     }
 };
