@@ -3,9 +3,11 @@ public:
     bool canConstruct(string ransomNote, string magazine) {
         map<char, int> mp;
         int count = 0;
+
         for(int i=0; i<magazine.size(); ++i) {
             mp[magazine[i]]++;
         }
+
         for(auto temp: ransomNote) {
             if(mp.find(temp) != mp.end() && mp[temp] > 0) {
                 mp[temp]--;
@@ -14,6 +16,7 @@ public:
                 return false;
             }
         }
+
         return true;
     }
 };
