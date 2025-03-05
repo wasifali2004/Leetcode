@@ -3,6 +3,7 @@ public:
     int getLucky(string s, int k) {
         int sum = 0;
         int check = 0;
+
         for(char c:s) {
             check = (c-'a')+1;
             while(check) {
