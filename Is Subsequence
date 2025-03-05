@@ -4,6 +4,7 @@ public:
         int low = 0;
         int high = 0;
         int count = 0;
+
         while(s.length() > low && t.length() > high) {
             if(s[low] == t[high]){
                 count++;
@@ -14,6 +15,7 @@ public:
                 high++;
             }
         }
+
         if(count != s.length()) {
             return false;
         }
