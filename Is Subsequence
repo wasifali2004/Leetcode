@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
+
         int low = 0;
         int high = 0;
         int count = 0;
