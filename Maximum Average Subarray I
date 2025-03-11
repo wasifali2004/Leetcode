@@ -1,6 +1,7 @@
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
+
         if(nums.size() < 2){
             double a = nums[0];
             return a;
