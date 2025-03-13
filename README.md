@@ -6,7 +6,7 @@ About
 This repository contains my solutions to LeetCode problems. Each solution is written in C++ and is organized by problem category and difficulty level. The goal is to document my learning journey and provide a reference for others who are also preparing for coding interviews or improving their problem-solving skills.
 
 How to Use
-Clone the repository:
+Clone the repository
 
 bash
 Copy code
