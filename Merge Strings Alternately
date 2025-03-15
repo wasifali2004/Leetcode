@@ -7,6 +7,7 @@ public:
         int low = 0;
         int high = 0;
         int count = 0;
+
         while(n > low && q > high) {
             if(count%2 == 0) {
                 result += word1[low];
@@ -26,6 +27,7 @@ public:
             }
             count++;
         }
+
         while(high < q) {
             result += word2[high];
             high++;
