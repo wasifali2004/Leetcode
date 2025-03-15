@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
+
         map<char, int> mp;
         int count = 0;
 
