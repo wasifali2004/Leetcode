@@ -14,6 +14,7 @@ public:
                 low++;
                 high++;
             }
+
             else if(nums[low] != 0 && nums[high] == 0){
                 low = high;
                 high++;
